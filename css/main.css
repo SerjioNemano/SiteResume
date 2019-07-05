@@ -1,0 +1,441 @@
+*{
+	font-family: 'Tenor Sans';
+	margin: 0;
+	padding: 0;
+
+}
+@font-face{
+	font-family: 'Tenor Sans';
+	src: url(../resources/TenorSans-Regular.ttf);
+}	
+html{
+	height:100%; min-height:100%; 
+	-webkit- background-blend-mode: darken;
+	-moz- background-blend-mode: darken;
+	-o- background-blend-mode: darken;
+	background-blend-mode: darken;
+
+	-webkit- background-size: cover;
+	-moz- background-size: cover;
+	-o- background-size: cover;
+	background-size: cover;
+
+	-webkit- background-position: center;
+	-moz-background-position: center;
+	-o-background-position: center;
+	background-position: center;
+
+	-webkit- background-attachment: fixed;
+	-moz- background-attachment: fixed;
+	-o- background-attachment: fixed;
+	background-attachment: fixed;
+
+	background-color: #0000009e;
+	min-height: 100%;
+}
+.trap{display: none;}
+.error{
+    position: absolute;
+    top: 5px;
+    display: none;
+}
+
+
+
+header{
+	width: 100%;
+	height: 100px;
+	border-bottom: 1px solid gray
+}
+h1{    
+	font-size: 56px;
+	text-align: center;
+	margin: 27px 0;
+}
+a, p, h1{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+ul{
+	list-style: none;
+}
+.container{
+	margin-left: auto;
+	margin: auto;
+	width: 980px;
+}
+.header{
+	display: flex;
+	flex-wrap: nowrap;
+	height: 100%;
+	align-items: center;
+	justify-content: space-between;
+}
+.mobile_head, .mobile_contacts {
+	display: none;
+}
+.contacts{
+	margin-top: 30px;
+}
+nav{
+	flex-grow: 1;
+}
+nav ul{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	flex-grow: 1;
+}
+nav ul li{
+	font-size: 22px;
+	font-weight: bold;
+}
+nav ul li:nth-child(5){
+	display: none;
+}
+nav ul li a{
+	padding: 37px 0px;}
+	.sendMail{
+		flex-grow: 0;
+		padding: 14px 7px;
+		background-color: #ab2e00;
+		border-radius: 5px;
+	}
+	.sendMail:hover{
+		text-decoration: none;
+		box-shadow: 0 0 0 1px white;
+	}
+	nav ul li a:hover{
+		text-decoration: underline;
+	}
+	section{
+		margin-bottom: 27px;
+	}
+	main{
+		display: flex;
+		flex-wrap: nowrap;
+	}
+	main article:first-child{
+		flex-grow: 1;
+		margin-right: 20px;
+	}
+	.avatar{
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+		-webkit-box-shadow: 0 0 0 3px #FFFFFF;
+		-moz-box-shadow: 0 0 0 3px #FFFFFF;
+		-o-box-shadow: 0 0 0 3px #FFFFFF;
+		box-shadow: 0 0 0 3px #FFFFFF;
+		margin-top: 40px;
+		-webkit- background-size: cover;
+		-moz- background-size: cover;
+		-o- background-size: cover;
+		background-size: cover;
+	}
+	.aboutMe section p{
+		font-size: 20px;
+		text-align: center;
+	}
+	.contacts li a div{
+		display: inline-block;
+		height: 28px;
+		width: 28px;
+		background-size: 161px;
+		background-image: url(../resources/pack.png);
+	}	
+	.contacts li a{
+		vertical-align: middle;
+		display: flex;
+		align-items: center;
+		margin: 15px 0;
+	}
+	.tel div{
+		background-position: 61px 2px;
+	}
+	.mailru div{
+		background-position: 0 1px;
+	}
+	.teleg div{
+		background-position: 0 27px;
+	}
+	.viber div{
+		background-position: 127px 27px;
+	}
+	.skype div{
+		background-position: 27px 2px;
+	}
+	.b-container{
+		width:200px;
+		height:150px;
+		background-color: #ccc;
+		margin:0px auto;
+		padding:10px;
+		font-size:30px;
+		color: #fff;
+	}
+	.arrow {
+		/*background-color: green;*/
+		width: 40px;
+		height: 40px;
+		left: 180px;
+		-webkit-box-shadow: inset 0 0 12px 2px orangered;
+		-moz-box-shadow: inset 0 0 12px 2px orangered;
+		-o-box-shadow: inset 0 0 12px 2px orangered;
+		box-shadow: inset 0 0 12px 2px orangered;
+		position: fixed;
+		border-radius: 50%;
+		display: none;
+	}
+	.arrow span {
+		display: block;
+		width: 45%;
+		top: 18px;
+		position: absolute;
+		height: 3px;
+		background-color: white;
+		-webkit-transition: .5s ease-in-out;
+		-moz-transition: .5s ease-in-out;
+		-o-transition: .5s ease-in-out;
+		transition: .5s ease-in-out;
+	}
+	.arrow span:first-child{
+		-webkit-transform: rotate(-45deg);
+		-moz-transform: rotate(-45deg);
+		-o-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+		left: 5px;
+	}
+	.arrow span:last-child{
+		-webkit-transform: rotate(45deg);
+		-moz-transform: rotate(45deg);
+		-o-transform: rotate(45deg);
+		transform: rotate(45deg);
+		left: 16px;
+	}
+	.down span:first-child{
+		-webkit-transform: rotate(45deg);
+		-moz-transform: rotate(45deg);
+		-o-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+	.down span:last-child{
+		-webkit-transform: rotate(-45deg);
+		-moz-transform: rotate(-45deg);
+		-o-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+	}
+.backgroundModal {
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+z-index: 10000;
+/* фон затемнения */
+background-color: rgba(0, 0, 0, 0.8);
+position: fixed; /* фиксированное позиционирование */
+/* трансформация прозрачности при открытии  */
+-webkit-transition: opacity .5s;
+-moz-transition: opacity .5s;
+-ms-transition: opacity .5s;
+-o-transition: opacity .5s;
+transition: opacity .5s;
+visibility: visible;
+opacity: 1;
+}
+/* Базовый стиль формы */
+form {
+	position: fixed;
+    margin: 0 auto;
+    padding: 30px 30px 6px 30px;
+    min-width: 320px;
+    max-width: 520px;
+    width: 100%;
+    border: 1px solid rgba(120,120,120,.7);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: rgba(60, 63, 65, 0.9); 
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    -webkit-box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+    -moz-box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+    box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+}
+/* общие для полей ввода */
+textarea, input{
+	width: 100%;
+    display:block;    
+    margin-bottom:20px;
+    /*padding-right:20px;*/
+    /*padding-left:20px;*/
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    /*background-clip: padding-box; */
+    color:#fff;
+    font-weight: 300;
+    font-size:18px;
+    font-family: 'Open Sans', sans-serif;
+    background: rgba(255, 255, 255, 0.4); 
+}
+/* поле сообщения */
+textarea{
+    overflow:hidden;
+    max-width: 100%;
+    height: 110px;
+    border: 1px solid rgba(255,255,255,.6);
+	
+}
+/* поля ввода */
+input {
+    height: 48px;
+    border: 1px solid rgba(255,255,255,.4);
+}
+input[type=submit] {
+    cursor:pointer;
+}
+::-webkit-input-placeholder {
+	color: #fff;
+    text-align: center;
+}
+:-moz-placeholder{ 
+    color: #fff; 
+    text-align: center;
+}
+::-moz-placeholder {
+    color: #fff;
+    text-align: center;
+}
+:-ms-input-placeholder {  
+	color: #fff; 
+	text-align: center;
+}
+input:focus, textarea:focus { 
+	background-color: rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 5px 1px rgba(255,255,255,.5);
+    -webkit-box-shadow: 0 0 5px 1px rgba(255,255,255,.5);
+    box-shadow: 0 0 5px 1px rgba(255,255,255,.5);
+	overflow: hidden; 
+}
+:focus::-webkit-input-placeholder { color:transparent; }
+:focus::-moz-placeholder { color:transparent; }
+:focus::placeholder { color:transparent; }
+
+/* Стили для кнопки отправить */
+.btn {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+	border-radius: 4px;
+    border: 1px solid #253737;
+    background: #416b68;
+    background: -webkit-gradient(linear, left top, left bottom, from(#6da5a3), to(#416b68));
+    background: -webkit-linear-gradient(top, #6da5a3, #416b68);
+    background: -moz-linear-gradient(top, #6da5a3, #416b68);
+    background: -ms-linear-gradient(top, #6da5a3, #416b68);
+    background: -o-linear-gradient(top, #6da5a3, #416b68);
+    background-image: -ms-linear-gradient(top, #6da5a3 0%, #416b68 100%);
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    -moz-box-shadow: rgba(255,255,255,0.1) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    box-shadow: rgba(255,255,255,0.1) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    color: #e1e1e1;
+    outline: none;
+}
+/* стиль кнопки при наведении */
+.btn:hover {
+    border: 1px solid #253737;
+    background: #416b68;
+    background: -webkit-gradient(linear, left top, left bottom, from(#77b2b0), to(#416b68));
+    background: -webkit-linear-gradient(top, #77b2b0, #416b68);
+    background: -moz-linear-gradient(top, #77b2b0, #416b68);
+    background: -ms-linear-gradient(top, #77b2b0, #416b68);
+    background: -o-linear-gradient(top, #77b2b0, #416b68);
+    background-image: -ms-linear-gradient(top, #77b2b0 0%, #416b68 100%);
+    color: #fff;
+ }
+/* активная кнопка */
+.btn:active {
+    margin-top:1px;
+    border: 1px solid #333333;
+    background: #ffCC00;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffCC00), to(#ff6600));
+    background: -webkit-linear-gradient(top, #ffcc00, #ff6600);
+    background: -moz-linear-gradient(top, #ffcc00, #ff6600);
+    background: -ms-linear-gradient(top, #ffcc00, #ff6600);
+    background: -o-linear-gradient(top, #ffcc00, #ff6600);
+    background-image: -ms-linear-gradient(top, #ffcc00 0%, #ff6600 100%);
+    -webkit-box-shadow: rgba(255,255,255,0) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    -moz-box-shadow: rgba(255,255,255,0) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    box-shadow: rgba(255,255,255,0) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    color: #fff;
+}
+/* конец формы */
+
+
+/** стили модального блока */
+.modal {
+ top: 25%;
+ right: 0;
+ left: 0;
+ width: 50%;
+ z-index: 10001;
+/** полная прозрачность изначально */
+ /*opacity: 0;*/
+ /*opacity: 1;*/
+ display: block;
+
+ position: fixed;
+/* трансформация прозрачности при открытии  */
+  -webkit-transition: opacity 500ms ease-in;
+  -moz-transition: opacity 500ms ease-in;
+  transition: opacity 500ms ease-in; 
+
+}
+.close{
+    cursor: pointer;
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+
+}
+.close:hover{
+	transition: .5s ease-in-out;
+	border-radius: 50%;
+    /*box-shadow: inset 0 0 12px 2px orangered;*/
+    transform: rotate(180deg);
+}
+.close span{
+    position: inherit;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    bottom: 9px;
+}
+.close span:first-child{
+	transform: rotate(45deg);
+}
+.close span:last-child{
+	transform: rotate(-45deg);
+}
+.hide{
+    opacity: 0;
+    display: none;
+}	
+.altsendMail{
+	display: none;
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.container {
+    margin-left: auto;
+    margin: auto;
+    width: 750px;}
+}

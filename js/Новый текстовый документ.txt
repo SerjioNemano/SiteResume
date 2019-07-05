@@ -1,0 +1,12 @@
+    var $windowHeight= $(window).height();
+    $(window).on('scroll', function() {
+        if($(this).scrollTop() > $windowHeight) {
+            console.log('dgf');
+            btn.show()
+        }else{
+            btn.show()
+        }
+    });
+    btn.on('click', function() {
+
+    });
